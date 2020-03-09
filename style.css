@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 10px/16px = 62.5% -> 1rem = 10px8 */
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.4rem;
+  color: #314960;
+}
+
+.container {
+  width: 116.9rem;
+  margin: auto;
+  padding-top: 5rem;
+  min-height: 100vh;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 80rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 60rem;
+  }
+}
+
+.header {
+  padding-bottom: 2rem;
+}
+
+.header .heading {
+  display: inline-block;
+  font-weight: 300;
+  margin-right: 2rem;
+}
+
+.header .btn {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #cf361e;
+  display: inline-block;
+  color: #fff;
+  font-size: 2.9rem;
+  text-align: center;
+  line-height: 4rem;
+  transition: all 0.3s;
+}
+
+.header .btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 2.3rem 1.5rem;
+  min-height: 55.1rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 #344b60;
+  border-radius: 12px;
+}
+
+.table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 2rem 0;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:hover {
+  background-color: #f3f9ff;
+}
+
+.table tbody .avatar,
+.table tbody .name {
+  vertical-align: middle;
+}
+.table tbody .avatar {
+  margin: 0 1rem;
+  display: inline-block;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.table tbody tr td:last-of-type {
+  width: 5rem;
+}
+
+.table .btn-remove {
+  display: none;
+}
+
+.table tbody tr:hover .btn-remove {
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+
+.members-box {
+  display: flex;
+  padding: 2rem 0;
+}
+
+.members {
+  margin-right: 2rem;
+  color: #d8d8d8;
+}
+
+.btn-members {
+  text-transform: uppercase;
+  border: none;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #395166;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-members:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

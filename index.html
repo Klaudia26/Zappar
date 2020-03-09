@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>User List</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main class="main">
+        <header class="header">
+          <h1 class="heading">Members</h1>
+          <div class="btn add-user">+</div>
+        </header>
+        <section class="section">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Team member</th>
+                <th>Email</th>
+                <th>Permision leavel</th>
+              </tr>
+            </thead>
+            <tbody class="list"></tbody>
+          </table>
+          <div class="members-box">
+            <div class="members">
+              Your team has <span class="active-users"></span> active members
+            </div>
+            <div class="member-invite">
+              <button class="btn-members add-user">
+                <span class="member-img"><img src="./img/Group2.svg"/></span>
+                Invite
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
